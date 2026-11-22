@@ -21,19 +21,19 @@ const experience = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-white/[0.03] py-20 px-6">
+    <section id="experience" className="bg-soft py-16 md:py-20 px-5 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-8">
-          My <span className="text-indigo-400">Experience</span>
+        <h2 className="text-3xl font-bold text-ink mb-8">
+          My <span className="text-accent">Experience</span>
         </h2>
         <div className="space-y-8">
           {experience.map((e) => (
-            <div key={e.role + e.period} className="border-l-4 border-indigo-400 pl-5">
-              <h3 className="text-xl font-semibold text-white">{e.role}</h3>
-              <p className="text-gray-400">
+            <div key={e.role + e.period} className="border-l-4 border-accent pl-5">
+              <h3 className="text-xl font-semibold text-ink">{e.role}</h3>
+              <p className="text-muted">
                 {e.company} · {e.period}
               </p>
-              <ul className="list-disc ml-5 mt-2 text-gray-300 space-y-1">
+              <ul className="list-disc ml-5 mt-2 text-muted space-y-1">
                 {e.points.map((p) => (
                   <li key={p}>{p}</li>
                 ))}

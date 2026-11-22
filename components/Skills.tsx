@@ -8,24 +8,18 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-white/[0.03] py-20 px-6">
+    <section id="skills" className="bg-soft py-16 md:py-20 px-5 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-8">
-          My <span className="text-indigo-400">Skills</span>
+        <h2 className="text-3xl font-bold text-ink mb-8">
+          My <span className="text-accent">Skills</span>
         </h2>
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-5">
           {skills.map((s) => (
-            <div
-              key={s.category}
-              className="border border-white/10 bg-white/5 rounded-xl p-5"
-            >
-              <h3 className="font-semibold text-white mb-3">{s.category}</h3>
+            <div key={s.category} className="bg-surface border border-line rounded-xl p-5 shadow-sm">
+              <h3 className="font-semibold text-ink mb-3">{s.category}</h3>
               <div className="flex flex-wrap gap-2">
                 {s.items.map((i) => (
-                  <span
-                    key={i}
-                    className="text-sm px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300"
-                  >
+                  <span key={i} className="text-sm px-3 py-1 rounded-full bg-accent-soft text-accent">
                     {i}
                   </span>
                 ))}
