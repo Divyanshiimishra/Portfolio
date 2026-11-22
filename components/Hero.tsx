@@ -38,7 +38,7 @@ export default function Hero() {
               href="https://1drv.ms/b/c/0929d462e1441208/IQD9K3VzNIf1RKS8VfSWvAWTAQywJHn8e-KYAsvSzuXWY8o?e=crrVJh"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 py-3 rounded-lg border border-accent text-accent hover:bg-accent-soft transition"
+              className="px-7 py-3 rounded-lg bg-accent-soft text-accent font-medium border border-accent/30 hover:bg-accent hover:text-white transition"
             >
               View Resume
             </a>

@@ -29,14 +29,24 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-5 mt-6">
-                <a href={p.live} target="_blank" className="text-accent font-medium hover:underline">
-                  Live Preview →
-                </a>
-                <a href={p.github} target="_blank" className="text-muted hover:underline">
-                  GitHub
-                </a>
-              </div>
+              <div className="flex flex-wrap gap-3 mt-6">
+  <a
+    href={p.live}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-5 py-2.5 rounded-lg bg-accent text-white font-medium hover:opacity-90 transition"
+  >
+    Live Preview →
+  </a>
+  <a
+    href={p.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-5 py-2.5 rounded-lg bg-accent-soft text-accent font-medium border border-accent/30 hover:bg-accent hover:text-white transition"
+  >
+    GitHub
+  </a>
+</div>
             </div>
           </div>
         ))}
